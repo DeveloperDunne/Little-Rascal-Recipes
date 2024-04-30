@@ -15,6 +15,11 @@ class Recipe(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        ordering = ["-created_on"]
+        def __str__(self):
+            return f"The title of this post is {self.title}"
+
     class Comment(models.Model):
         recipe = models.ForeignKey(
         Recipe, on_delete=models.CASCADE, related_name="comments")
@@ -24,3 +29,8 @@ class Recipe(models.Model):
         content = models.TextField()
         approved = models.BooleanField(default=False)
         created_on = models.DateTimeField(auto_now_add=True)
+
+        class Meta:
+            ordering = ["-created_on"]
+            def __str__(self):
+                return f"The title of this post is {self.title}"
