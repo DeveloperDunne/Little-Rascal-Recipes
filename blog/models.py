@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
 
-class Recipe(models.Model):
+class Recipes(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -20,17 +20,16 @@ class Recipe(models.Model):
         def __str__(self):
             return f"The title of this post is {self.title}"
 
-    class Comment(models.Model):
-        recipe = models.ForeignKey(
-        Recipe, on_delete=models.CASCADE, related_name="comments")
-        author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="commenter"
-    )
-        content = models.TextField()
-        approved = models.BooleanField(default=False)
-        created_on = models.DateTimeField(auto_now_add=True)
+class Comments(models.Model):
+    post  = models.ForeignKey(Recipes, on_delete=models.CASCADE,
+                             related_name="comments")
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter")
+    content = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
 
-        class Meta:
-            ordering = ["-created_on"]
-            def __str__(self):
-                return f"The title of this post is {self.title}"
+    class Meta:
+        ordering = ["-created_on"]
+        def __str__(self):
+            return f"The title of this post is {self.title}"
