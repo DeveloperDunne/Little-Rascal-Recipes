@@ -1,1 +1,1 @@
-web: gunicorn little-rascal-recipes.wsgi
+web: gunicorn little_rascal_recipes.wsgi
