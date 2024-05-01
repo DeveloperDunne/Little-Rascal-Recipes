@@ -6,7 +6,7 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #f2c890;
 }
 
 .red-o {
@@ -22,11 +22,11 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #f2c890;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: black;
 }
 
 .card {
@@ -159,3 +159,45 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+#hero-outer {
+    height: 54vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* credit for object-fit: https://www.w3schools.com/csS/css3_object-fit.asp */
+  .hero-image {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+   
+  }
+
+  /* cover text on hero image */
+.cover-text {
+    background-color: rgba(33, 33, 33, 0);
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    top: 5vh;
+    padding: 8px 7px 0px 7px;
+    text-align: left;
+    border-radius: 3px;
+    width: 78%;
+  }
+  
+  .cover-text > h1 {
+    color: #fef2d8;
+    padding-top: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .cover-text > h2 {
+    color: #fef2d8;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }

@@ -9,6 +9,7 @@ class RecipeList(generic.ListView):
     paginate_by = 6
 
 def recipe_detail(request, slug):
+   
     """
     Display an individual :model:`blog.Post`.
 
@@ -28,5 +29,5 @@ def recipe_detail(request, slug):
     return render(
         request,
         "blog/recipe_detail.html",
-        {"post": recipe},
+        {"recipe": recipe},
     )

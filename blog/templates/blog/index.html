@@ -1,13 +1,31 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <!-- index.html content starts here -->
 <div class="container-fluid">
     <div class="row">
+        <main class="flex-shrink-90 main-bg">
+      
+            <section id="hero-outer">
+            
+              <img
+                src="{% static 'images/babyfood.jpg' %}"
+                class="hero-image"
+                alt=""
+              />
+              <div class="cover-text">
+                <h1>Welcome to Little Rascal Recipes</h1>
+                <h2>Mini adventures with every bite!</h2>
+                <p><a class="btn btn-lg btn-primary" href="#popular" aria-label="Go to the popular recipes">Explore Popular Recipes</a></p>
+                <br>
+              </div>
+            </section>
+         
+          </main>
 
         <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
+        <div id="popular" class="col-12 mt-3 left">
             <div class="row">
                 {% for recipe in recipe_list %}
                 <div class="col-md-4">
@@ -23,8 +41,7 @@
                             </a>
 
                             <hr />
-                            <p class="card-text text-muted h6">{{ recipe.created_on}}
-                            </p>
+                        
                         </div>
                     </div>
                 </div>
