@@ -5,4 +5,5 @@ from .models import Recipe, Comment
 
 class RecipeList(generic.ListView):
     queryset = Recipe.objects.filter(status=1)
-    template_name = "post_list.html"
+    template_name = "blog/index.html"
+    paginate_by = 6
