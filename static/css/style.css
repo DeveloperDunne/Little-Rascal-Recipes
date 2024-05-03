@@ -1,5 +1,5 @@
 body {
-    background-color: #f2c890;
+    background-color: #f0eeea;
 }
 
 .brand {
@@ -28,14 +28,9 @@ body {
 }
 
 .card {
-    background-color: #fdfd96;
-    border: 3px solid #fff;
-    color: white;
-}
-.card:hover {
     background-color: white;
-    border: 3px solid #ffc107;
-    color: #ffc107;
+    border: 3px solid black;
+      color: black;
 }
 
 .image-container {
@@ -97,7 +92,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .post-link:hover,
