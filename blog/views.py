@@ -34,7 +34,7 @@ def recipe_detail(request, slug):
     request,
     "blog/recipe_detail.html",
     {
-        "recipe": Recipe,
+        "recipe": recipe,
         "comments": comment,
         "comment_count": comment_count,
         "comment_form": comment_form,
