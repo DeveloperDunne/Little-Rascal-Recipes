@@ -51,7 +51,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: black;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -67,7 +67,7 @@ body {
 
 .masthead-text {
     background-color: #f2c890;
-    color: white;
+    color: black;
     position: relative;
 }
 
