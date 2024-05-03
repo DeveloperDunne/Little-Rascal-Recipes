@@ -20,7 +20,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #f2c890;
+    background-color: #fde396;
 }
 
 .main-bg {
@@ -29,8 +29,8 @@ body {
 
 .card {
     background-color: white;
-    border: 3px solid black;
-      color: black;
+    border: 3px solid #fde396;
+    color: black;
 }
 
 .image-container {
