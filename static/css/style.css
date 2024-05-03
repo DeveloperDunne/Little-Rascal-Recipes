@@ -12,7 +12,9 @@ body {
 .thin {
     font-weight: 300;
 }
-
+.navbar {
+    background-color: #fde396;
+}
 .light-bg {
     background-color: #fff;
 }
@@ -22,12 +24,18 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color:white ;
 }
 
 .card {
-    border: none;
-    background-color: transparent;
+    background-color: #fdfd96;
+    border: 3px solid #fff;
+    color: white;
+}
+.card:hover {
+    background-color: white;
+    border: 3px solid #ffc107;
+    color: #ffc107;
 }
 
 .image-container {
@@ -89,7 +97,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: white;
 }
 
 .post-link:hover,
