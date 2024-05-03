@@ -31,7 +31,14 @@ related_name="comments")
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+<<<<<<< HEAD
         ordering = ["created_on"]
 
     def __str__(self):
         return f"Comment: {self.body} by {self.author}"
+=======
+        ordering = ["-created_on"]
+    def __str__(self):
+        # return f"The title of this post is {self.title}"
+        return self.recipe
+>>>>>>> 6b36b6eb679a59467697eb515fb35cac7c478886

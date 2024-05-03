@@ -41,6 +41,7 @@
         <div class="col-12">
             <hr>
         </div>
+<<<<<<< HEAD
     </div>
     <!-- Displaying Comments -->
     <div class="row">
@@ -63,6 +64,29 @@
                     {% if not comment.approved and comment.author == user %}
                     <p class="approval">This comment is awaiting approval</p>
                     {% endif %}
+=======
+        <!-- Displaying Comments -->
+        <div class="row">
+            <div class="col-md-8 card mb-4  mt-3 ">
+                <h3>Comments:</h3>
+                <div class="card-body">
+                    <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
+                    {% for comment in comments %}
+                    <div
+                        class="p-2 comments{% if not comment.approved and comment.author == user %} faded{% elif not comment.approved %} d-none{% endif %}">
+                        <p class="font-weight-bold">
+                            {{ comment.author }}
+                            <span class="font-weight-normal">
+                                {{ comment.created_on }}
+                            </span> wrote:
+                        </p>
+                        <div id="comment{{ comment.id }}">
+                            {{ comment.body | linebreaks }}
+                        </div>
+                        {% if not comment.approved and comment.author == user %}
+                        <p class="approval">This comment is awaiting approval</p>
+                        {% endif %}
+>>>>>>> 6b36b6eb679a59467697eb515fb35cac7c478886
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
