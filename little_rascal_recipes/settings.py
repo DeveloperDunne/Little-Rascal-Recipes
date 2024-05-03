@@ -30,7 +30,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
-                 '.herokuapp.com',]
+                 '.herokuapp.com',
+                 '8000-developerdu-littlerasca-to2ckp5k2ay.ws-eu110.gitpod.io']
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-developerdu-littlerasca-to2ckp5k2ay.ws-eu110.gitpod.io']
 
 
 # Application definition
@@ -108,7 +111,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    'https://8000-developerdu-littlerasca-to2ckp5k2ay.ws-eu110.gitpod.io'
 ]
 
 # Password validation
