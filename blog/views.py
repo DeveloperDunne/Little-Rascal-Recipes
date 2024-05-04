@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.contrib import messages
 from .models import Recipe, Comment
 from .forms import CommentForm
 # Create your views here.
@@ -28,6 +29,19 @@ def recipe_detail(request, slug):
     recipe = get_object_or_404(queryset, slug=slug)
     comment = recipe.comments.all().order_by("-created_on")
     comment_count = recipe.comments.filter(approved=True).count()
+
+    if request.method == "POST":
+        comment_form = CommentForm(data=request.POST)
+    if comment_form.is_valid():
+        comment = comment_form.save(commit=False)
+        comment.author = request.user
+        comment.recipe = recipe
+        comment.save()
+
+        messages.add_message(
+        request, messages.SUCCESS,
+        'Thanks! Your comment has been submitted and is now awaiting approval.'
+    )
     comment_form = CommentForm()
 
     return render(
