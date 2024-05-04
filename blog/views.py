@@ -32,14 +32,14 @@ def recipe_detail(request, slug):
 
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
-    if comment_form.is_valid():
-        comment = comment_form.save(commit=False)
-        comment.author = request.user
-        comment.recipe = recipe
-        comment.save()
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.author = request.user
+            comment.recipe = recipe
+            comment.save()
 
         messages.add_message(
-        request, messages.SUCCESS,
+            request, messages.SUCCESS,
         'Thanks! Your comment has been submitted and is now awaiting approval.'
     )
     comment_form = CommentForm()
