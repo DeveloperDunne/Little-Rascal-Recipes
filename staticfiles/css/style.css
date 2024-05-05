@@ -1,5 +1,5 @@
 body {
-    background-color: #f2c890;
+    background-color: #f0eeea;
 }
 
 .brand {
@@ -12,22 +12,25 @@ body {
 .thin {
     font-weight: 300;
 }
-
+.navbar {
+    background-color: #fde396;
+}
 .light-bg {
     background-color: #fff;
 }
 
 .dark-bg {
-    background-color: #f2c890;
+    background-color: #fde396;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color:white ;
 }
 
 .card {
-    border: none;
-    background-color: transparent;
+    background-color: white;
+    border: 3px solid #fde396;
+    color: black;
 }
 
 .image-container {
@@ -48,7 +51,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: black;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -64,7 +67,7 @@ body {
 
 .masthead-text {
     background-color: #f2c890;
-    color: white;
+    color: black;
     position: relative;
 }
 
@@ -89,7 +92,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: black;
 }
 
 .post-link:hover,
