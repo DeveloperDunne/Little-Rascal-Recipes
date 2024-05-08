@@ -10,7 +10,7 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ recipe.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
+                <p class="post-subtitle">{{ recipe.excerpt }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/messy_baby.jpg' %}" class="scale" alt="placeholder">
