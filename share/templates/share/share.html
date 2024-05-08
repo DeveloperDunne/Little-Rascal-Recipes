@@ -6,7 +6,7 @@
     <!-- Displaying recipes -->
     
         <div class="col-12 col-md-6 my-5">
-                <!-- Adding a recipe -->
+                
         <div class="">
             <div class="card-body">
                 {% if user.is_authenticated %}
@@ -27,7 +27,7 @@
             <div class="card-body">
 
                 <!-- We want a for loop inside the empty control tags -->
-        {% for shared in share %}
+        {% for share in shared %}
         <div
                     class="p-2 shared{% if not share.approved and share.author == user %} faded{% elif not share.approved %} d-none{% endif %}">
                     <p class="font-weight-bold">
@@ -37,7 +37,9 @@
                         </span> wrote:
                     </p>
                     <div id="share{{ share.id }}">
-                        {{ share.body | linebreaks }}
+                        
+                        {{ share.title | linebreaks }}
+                        {{ share.picture | linebreaks }}
                     </div>
                     {% if not share.approved and share.author == user %}
                     <p class="approval">This recipe is awaiting approval</p>

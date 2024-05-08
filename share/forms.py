@@ -9,4 +9,4 @@ class ShareABookForm(forms.ModelForm):
     """
     class Meta:
         model = Share
-        fields = ('picture', 'title','author')
+        fields = ('title', 'author', 'picture',)
