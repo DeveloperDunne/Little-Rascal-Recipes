@@ -13,7 +13,7 @@
                 <h3>Share a recipe:</h3>
                 <p>If you have any cookbooks with amazing recipes for children we would love to hear from you. Fill out the information below and share with others!!</p>
                 <p>Posting as: {{ user.username }}</p>
-                <form id="shareForm" method="post" style="margin-top: 1.3em;">
+                <form id="shareForm" method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
                     {{ share_a_book_form | crispy }}
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
