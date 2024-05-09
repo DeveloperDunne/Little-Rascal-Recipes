@@ -88,7 +88,7 @@ text-align: center;
 
 .card {
     background-color: white;
-    border: 3px solid #fde396;
+    border: 3px solid #ffc107;
     color: black;
 }
 
@@ -192,11 +192,15 @@ text-align: center;
 /*Share Page*/
 
 .shared-card {
-    
-    box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
+    border: #ffc107;
+    box-shadow: #ffc107 1px 10px 10px 1px;
     padding: 15px;
     margin-bottom: 25px;
-    height: 700px;
+    height: 500px;
+}
+
+.share-book {
+    align-items: center;
 }
 
 .title {
@@ -221,9 +225,16 @@ text-align: center;
     margin-bottom: 110px !important;
 }
 
+.shared-text {
+    font-size: 2rem;
+}
+
 /*Footer*/
 
-.socials a{
+ i{
     text-decoration: none;
     color: black;
+}
+.socials {
+ justify-content:space-evenly;
 }
