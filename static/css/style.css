@@ -13,15 +13,15 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: black;
+    color: white;
 }
 
 .navbar {
-    background-color: #fde396;
+    background-color: #ffc107;
 }
 
 .dark-bg {
-    background-color: #fde396;
+    background-color: #ffc107;
 }
 
 .main-bg {
@@ -79,7 +79,8 @@ font-size: 40px;
 font-weight: 600;
 padding:20px;
 text-decoration: underline;
-background-color: #fde396;
+color: #fff;
+background-color: #ffc107;
 text-align: center;
 }
 
