@@ -38,14 +38,14 @@
                 
                             </div>
         
-                        
+                            <hr>
                             {% if not share.approved and share.author == user %}
                             <p class="approval">This recipe is awaiting approval</p>
-                            {% endif %}
+                            
                                 {% if user.is_authenticated and share.author == user %}
                                 <button class="btn btn-delete" data-share_id="{{ share.id }}">Delete</button>
                                 <button class="btn btn-edit" data-share_id="{{ share.id }}">Edit</button>
-                                
+                                {% endif %}   
                             </div>
                             <!-- Delete confirmation modal -->
         <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">

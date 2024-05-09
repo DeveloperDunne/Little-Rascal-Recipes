@@ -6,15 +6,14 @@
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
+            <div class="col-md-12 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ recipe.title }}</h1>
+                <br>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ recipe.excerpt }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/messy_baby.jpg' %}" class="scale" alt="placeholder">
-            </div>
+            
         </div>
     </div>
 </div>
@@ -52,10 +51,9 @@
                 <div
                     class="p-2 comments{% if not comment.approved and comment.author == user %} faded{% elif not comment.approved %} d-none{% endif %}">
                     <p class="font-weight-bold">
-                        {{ comment.author }}
-                        <span class="font-weight-normal">
-                            {{ comment.created_on }}
-                        </span> wrote:
+                        {{ comment.author }} wrote:
+                    
+                        </span> 
                     </p>
                     <div id="comment{{ comment.id }}">
                         {{ comment.body | linebreaks }}
