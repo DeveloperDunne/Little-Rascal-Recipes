@@ -24,58 +24,53 @@
             </div>
         </div>
             <h3>Sharing is caring:</h3>
-            <div class="card-body">
-
-                <!-- We want a for loop inside the empty control tags -->
-        {% for share in shared %}
-        <div
-                    class="p-2 shared{% if not share.approved and share.author == user %} faded{% elif not share.approved %} d-none{% endif %}">
-                    <p class="font-weight-bold">
-                        {{ share.author }}
-                        <span class="font-weight-normal">
-                            {{ share.created_on }}
-                        </span> wrote:
-                    </p>
-                    <div id="share{{ share.id }}">
+            <div class="container">
+                <div class="row">
+                    {% for share in shared %}
+                    <div class="col-md-4">
+                        <div class="shared-card">
+                            <div>
+                                <img class="share-img" src="{{ share.picture.url }}" alt=" Image">
+                            </div>
+                            <div class="content">
+                                <h4> {{share.title}}</h4>
+                                <h4><{{share.author}}</h4>
+                
+                            </div>
+        
                         
-                        {{ share.title | linebreaks }}
-                        {{ share.picture | linebreaks }}
+                            {% if not share.approved and share.author == user %}
+                            <p class="approval">This recipe is awaiting approval</p>
+                            {% endif %}
+                                {% if user.is_authenticated and share.author == user %}
+                                <button class="btn btn-delete" data-share_id="{{ share.id }}">Delete</button>
+                                <button class="btn btn-edit" data-share_id="{{ share.id }}">Edit</button>
+                                
+                            </div>
+                            <!-- Delete confirmation modal -->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel">Delete recipe?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    {% if not share.approved and share.author == user %}
-                    <p class="approval">This recipe is awaiting approval</p>
-                    {% endif %}
-                        {% if user.is_authenticated and share.author == user %}
-                        <button class="btn btn-delete" data-share_id="{{ share.id }}">Delete</button>
-                        <button class="btn btn-edit"
-                        data-share_id="{{ share.id }}">Edit</button>
-                        {% endif %}
-         </div>
-
-                <!-- Our for loop ends here -->
-                {% endfor %}
+                    <div class="modal-body">
+                        Are you sure you want to delete your recipe? This action cannot be undone.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
-        </div>
-    
-</div>
-<!-- Delete confirmation modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">Delete recipe?</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Are you sure you want to delete your recipe? This action cannot be undone.
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
-            </div>
-        </div>
-    </div>
-</div>
-
 {% endblock content %}
 
 {% block extras %}

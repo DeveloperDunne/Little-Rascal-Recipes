@@ -190,3 +190,33 @@ padding: 20px;
     font-size: 1.2rem;
     font-weight: 400;
   }
+
+  .shared-card {
+    
+    box-shadow: rgb(1 1 1 / 50%) 1px 10px 10px -1px;
+    padding: 15px;
+    margin-bottom: 25px;
+    height: 700px;
+}
+
+.title {
+    margin-bottom: -10px;
+}
+
+.share-img {
+    height:60%;
+    width:60%;
+    padding:20px;
+}
+
+
+.shared-card {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 20px 0 10px;
+    border-radius: 5px;
+}
+
+.shared-card .content p {
+    margin-bottom: 110px !important;
+}
