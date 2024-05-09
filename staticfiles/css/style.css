@@ -1,29 +1,94 @@
+/*Asterix tag overides browsers default style settings*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #f0eeea;
+    font-family: 'alice', sans-serif;
 }
 
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: 445261;
+    color: white;
 }
 
 .navbar {
-    background-color: #fde396;
+    background-color: #ffc107;
 }
 
 .dark-bg {
-    background-color: #fde396;
+    background-color: #ffc107;
 }
 
 .main-bg {
     background-color:white ;
 }
 
+ /* Hero Image */
+
+#hero-outer {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .hero-image {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+   
+  }
+
+  /* Cover text on hero image */
+  .cover-text {
+    background-color: rgba(33, 33, 33, 0);
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 5vh;
+    padding: 150px 7px 0px 7px;
+    text-align: left;
+    border-radius: 3px;
+    width: 78%;
+  }
+  
+  .cover-text > h1 {
+    color:white;
+    padding-top: 8px;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  
+  .cover-text > h2 {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+.home-text{
+font-family: "alice", sans-serif;
+font-size: 40px;
+font-weight: 600;
+padding:20px;
+text-decoration: underline;
+color: #fff;
+background-color: #ffc107;
+text-align: center;
+}
+
+/* Popular recipes cards*/
+
 .card {
     background-color: white;
-    border: 3px solid #fde396;
+    border: 3px solid #ffc107;
     color: black;
 }
 
@@ -44,14 +109,9 @@ body {
     height: auto;
 }
 
-.author {
-    color: black;
-    margin: 4px;
-    text-transform: uppercase;
-}
+/*Recipe Details*/
 
 .masthead {
-    margin-top: 10px;
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -62,33 +122,17 @@ body {
 .masthead-text {
     background-color: #fde396;
     color: black;
-    position: relative;
+    padding:20px;
+    text-align: center;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
 
 .post-link {
     text-decoration: none;
     color: black;
 }
 
-.post-link:hover,
+.recipe-link:hover,
 .page-link {
     color: #ffc107;
 }
@@ -113,11 +157,19 @@ body {
     color: #ffc107;
     border: 3px solid #ffc107;
 }
+/* About page*/
+
+.about-pic {
+    height: 100vh;
+    width: 100vw;
+}
+/* Signup page*/
 
 .btn-signup,
 .btn-edit {
     background-color: #fff;
     color: #ffc107;
+    text-align: center;
 }
 
 .btn-signup:hover,
@@ -126,70 +178,63 @@ body {
     color: black;
 }
 
-.link {
+.recipe-link {
     color: black;
     text-decoration: none;
 }
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #f37e57;
 }
 
-.btn-like:hover,
-.btn-like:active {
-    color: #ffc107;
-    background: transparent;
-    border: none;
+
+/*Share Page*/
+
+.shared-card {
+    border: #ffc107;
+    box-shadow: #ffc107 1px 10px 10px 1px;
+    padding: 15px;
+    margin-bottom: 25px;
+    height: 500px;
 }
 
-.faded {
-    color: rgb(172, 175, 175);
+.share-book {
+    align-items: center;
 }
 
-#popular-recipies {
-font-size: 50px;
-text-decoration: underline;
-padding: 20px;
+.title {
+    margin-bottom: -10px;
 }
-#hero-outer {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+
+.share-img {
+    height:60%;
+    width:60%;
+    padding:20px;
+}
+
+
+.shared-card {
     position: relative;
-    margin-bottom: 50px;
-  }
-  
-  .hero-image {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    object-fit: cover;
-   
-  }
+    margin-bottom: 15px;
+    padding: 20px 0 10px;
+    border-radius: 5px;
+}
 
-  /* cover text on hero image */
-.cover-text {
-    background-color: rgba(33, 33, 33, 0);
-    font-family: "Raleway", sans-serif;
-    position: absolute;
-    top: 5vh;
-    padding: 150px 7px 0px 7px;
-    text-align: left;
-    border-radius: 3px;
-    width: 78%;
-  }
-  
-  .cover-text > h1 {
-    color:white;
-    padding-top: 8px;
-    font-size: 2.5rem;
-  }
-  
-  .cover-text > h2 {
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
+.shared-card .content p {
+    margin-bottom: 110px !important;
+}
+
+.shared-text {
+    font-size: 2rem;
+}
+
+/*Footer*/
+
+ i{
+    text-decoration: none;
+    color: black;
+}
+.socials {
+ justify-content:space-evenly;
+}
