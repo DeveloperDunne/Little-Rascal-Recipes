@@ -2,7 +2,7 @@
 
 (Developer: Carl Dunne)
 
-![AmIResponsive Image]
+![AmIResponsive Image](./README_Images/site_images/amiresponsive.jpg)
 
 ## Live website
 
@@ -73,7 +73,7 @@ This project used the "MoSCoW" method to classify its features and requirements 
 
 ## Agile Methodology
 
-* All functionality and development of this project were managed using GitHub Projects. This can be found here [(https://github.com/users/DeveloperDunne/projects/4)]
+* All functionality and development of this project were managed using GitHub Projects. This can be found here [Github Projects](https://github.com/users/DeveloperDunne/projects/4)
 
 ## The Scope
 
@@ -96,40 +96,68 @@ This blog is for users that are interested in healthy and delicious food for the
 ### Wireframes
 
 ### Colour Theme
+![Colour Theme](./README_Images/design_images/theme.jpg)
 
 ### Fonts
+![]()
 
 ## Features
 
 ### Navigation Bar
 
+#### Not logged in:
+![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-notlogged.jpg)
+
+#### Logged in:
+![Navigation Bar - Logged in](./README_Images/site_images/navbar-logged.jpg)
+
+#### Logged in message:
+![Logged in message](./README_Images/site_images/logged-in.jpg)
+
 ### Home Page
+![Home Page](./README_Images/site_images/home-page.jpg)
 
 #### Home Page - Popular Recipes
+![Popular recipes](./README_Images/site_images/popular-recipes.jpg)
 
 ### Recipe Details
+![Recipe Details](./README_Images/site_images/recipe.jpg)
 
-#### Recipe Details - Comments
+#### Recipe Details - Comments Logged in:
+![Comments - Logged in](./README_Images/site_images/comment-logged.jpg)
+
+#### Recipe - Comments logged out:
+![Comments - logged out](./README_Images/site_images/comment-not-logged.jpg)
 
 ### About Page
+![About](./README_Images/site_images/about-page.jpg)
 
 ### Contact Page
+![Contact](./README_Images/site_images/contact.jpg)
 
 ### Register Page
+![Register](./README_Images/site_images/signup.jpg)
 
 ### Sign In Page
+![Sign in](./README_Images/site_images/signin.jpg)
+
+### Sign Out Page
+![Sign Out]()
 
 ### Share Page
 
 #### Share Page - Share Cookbook
+![Share Cookbooks](./README_Images/site_images/share-form.jpg)
 
 #### Share Page - View Shared Cookbooks
-
-### Sign Out Page
+![Shared Books](./README_Images/site_images/share-shared.jpg)
 
 ### Footer
+![Footer](./README_Images/site_images/footer.jpg)
 
 ### Future Features
+
+## Django Admin
 
 ## Technologies Used
 
