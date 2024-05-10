@@ -65,6 +65,12 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 4. Delete user.
 5. Approve, reject or delete user's comments.
 
+### MoSCoW
+
+This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritisation of features. This method makes sure that essential components are tackled in priority order.
+
+![MoSCoW screenshot]()
+
 ## Agile Methodology
 
 * All functionality and development of this project were managed using GitHub Projects. This can be found here [(https://github.com/users/DeveloperDunne/projects/4)]
@@ -84,3 +90,47 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 ### Target audience
 
 This blog is for users that are interested in healthy and delicious food for their children.
+
+## Design
+
+### Wireframes
+
+### Colour Theme
+
+### Fonts
+
+### Images
+
+### Recipes
+
+## Features
+
+### Navigation Bar
+
+### Home Page
+
+#### Home Page - Popular Recipes
+
+### Recipe Details
+
+#### Recipe Details - Comments
+
+### About Page
+
+### Contact Page
+
+### Register Page
+
+### Sign In Page
+
+### Share Page
+
+#### Share Page - Share Cookbook
+
+#### Share Page - View Shared Cookbooks
+
+### Sign Out Page
+
+### Footer
+
+### Future Features
