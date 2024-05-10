@@ -36,31 +36,33 @@
                             <div>
                                 <img class="share-img " src="{{ share.picture.url }}" alt=" Image">
                             </div>
-                            <div class="share-book shared-details-text text-center">
+                            <div id="share {{share.id}}" class="share-book shared-details-text text-center">
                                 <h4> {{share.title}}</h4>
+                                <br>
                                 <h4>Written by: {{share.author}}</h4>
+                                <br>
                                 <h4>Shared by: {{share.name}}</h4>
-                
-                            </div>
-        
-                            {% if not share.approved and share.author == user %}
-                            <p class="approval">This recipe is awaiting approval</p>
-                            
-                                {% if user.is_authenticated and share.author == user %}
+                                {% if user.is_authenticated and share.name == user %}
                                 <button class="btn btn-delete" data-share_id="{{ share.id }}">Delete</button>
                                 <button class="btn btn-edit" data-share_id="{{ share.id }}">Edit</button>
-                                {% endif %}   
+                                {% endif %}
+                            </div>
+        
+                            {% if not share.approved and share.name == user %}
+                            <p class="approval">This cookbook is awaiting approval</p>
+                            
+                               
                             </div>
                             <!-- Delete confirmation modal -->
         <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="deleteModalLabel">Delete recipe?</h5>
+                        <h5 class="modal-title" id="deleteModalLabel">Delete cookbook?</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Are you sure you want to delete your recipe? This action cannot be undone.
+                        Are you sure you want to delete your cookbook? This action cannot be undone.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
