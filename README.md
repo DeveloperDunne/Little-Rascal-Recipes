@@ -134,3 +134,40 @@ This blog is for users that are interested in healthy and delicious food for the
 ### Footer
 
 ### Future Features
+
+## Technologies Used
+
+### Languages Used
+
+* HTML 5
+* CSS 3
+* JavaScript
+* Django
+* Python
+
+### Frameworks & Libraries Used
+
+*
+*
+*
+*
+
+### Django packages Installed
+
+* Gunicorn: As the server for Heroku.
+
+* Cloudinary: Was used to host the static files and media.
+
+* Dj_database_url: To parse the database URL from the environment variables in Heroku.
+
+* Psycopg2-binary: As an adaptor for Python and PostgreSQL databases.
+
+* Summernote: As a text editor for admin panel.
+
+* Allauth: For authentication, registration, account management.
+
+* Crispy Forms: To style the forms.
+
+## Testing
+
+Detailed testing documentation can be found [here.](./TESTING.md)
