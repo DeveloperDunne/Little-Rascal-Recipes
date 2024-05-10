@@ -35,6 +35,7 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 * As a website user, I can:
 
+<br>
 
 1. Navigate around the site and easily view the content.
 
@@ -46,7 +47,11 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 5. Register for an account to access the services offered to members.
 
+<br>
+
 * As logged in website user, I can:
+
+<br>
 
 1. Comment on recipes and give my opinion.
 
@@ -54,7 +59,11 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 3. Logout from the website.
 
+<br>
+
 * As a website superuser, I can:
+
+<br>
 
 1. Create and publish a new recipe.
 
@@ -102,6 +111,8 @@ Balsamiq was used to design the blogs look.
 ### Colour Theme
 ![Colour Theme](./README_Images/design_images/theme.webp)
 
+The color theme above was used throughout the project to ensure consitency and and appeal to the user.
+
 ### Fonts
 Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from [Google Fonts](https://fonts.google.com/).
 
@@ -109,14 +120,22 @@ Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from [Google Fon
 
 ### Navigation Bar
 
+A responsive navigation bar is situated at the top of the page. When on a mobile the bar condenses into a burger icon which will enable a dropdown menu, however on a desktop all pages are displayed along the bar. What is shown in the navigation bar depends on if teh user is logged in or not.
+
 #### Not logged in:
 ![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-notlogged.webp)
+
+When not logged in you will be able to see the following pages: Home, About, Contact, Register and Sign In.
 
 #### Logged in:
 ![Navigation Bar - Logged in](./README_Images/site_images/navbar-logged.webp)
 
+When logged in the Register and Sign in page disppear and instead you will see a Share page and Logout option.
+
 #### Logged in message:
 ![Logged in message](./README_Images/site_images/logged-in.webp)
+
+When you log in a message will appear at the top of th page to confirm that you have logged in successfully.
 
 ### Home Page
 ![Home Page](./README_Images/site_images/home-page.webp)
