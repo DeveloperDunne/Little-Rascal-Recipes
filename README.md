@@ -171,3 +171,55 @@ This blog is for users that are interested in healthy and delicious food for the
 ## Testing
 
 Detailed testing documentation can be found [here.](./TESTING.md)
+
+## Deployment
+
+All code for this project was written using the IDE visual studio code (VS Code). Github was used for version control and the application was deployed via Heroku.
+
+ ### Heroku Deployment
+
+* This site was deployed by completing the following steps:
+
+1. Log in to Heroku or create an account.
+
+2. On the main page click Create New App.
+
+3. Select your region.
+
+4. Click on the Create App button.
+
+5. The next page is the project’s Deploy Tab, click the Settings Tab.
+
+6. Next, scroll down to the Build pack section click ‘Add Build pack’ select Python and click Save Changes.
+
+7. Add Node.JS after adding Python. 
+(Please be aware: Python must be above Node.JS in that order).
+
+8. Go to the Deploy tab.
+
+9. Select Github as your deployment method.
+
+10. Connect to GitHub.
+
+11. Search your repository name and connect.
+
+12. Click either Enable Automatic Deploys for automatic deployment when you push updates to GitHub or manual to do this manually.
+
+### Cloning:
+
+1.  Go to the repository on GitHub.
+
+2.  Click on the Code button and copy the https URL under Clone.
+
+3.  Open a terminal.
+
+4. Go to the folder you want to store the cloned repository.
+
+5. In the terminal type git clone and paste the URL of the cloned repository after it then press Enter.
+
+6. The site will then be cloned to that directory.
+
+### Fork this repository:
+
+- Go to the GitHub repository.
+- Click on the Fork button in the upper right-hand corner.
