@@ -1,8 +1,6 @@
 # Little Rascal Recipes Blog
 
-(Developer: Carl Dunne)
-
-![AmIResponsive Image](./README_Images/site_images/amiresponsive.jpg)
+![AmIResponsive Image](./README_Images/site_images/amiresponsive.webp)
 
 ## Live website
 
@@ -18,16 +16,17 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 ## Table of contents
 
-- [1. User Expeience]()
-- [2. Agile Methodology]()
-- [3. The Scope]()
-- [4. Design]()
-- [5. Features]()
-- [6. Technologies Used]()
-- [7. Testing]()
-- [8. Deployment]()
-- [9. Credits]()
-- [10. Acknowledgements]()
+- [1. User Expeience](#user-experience-ux)
+- [2. Agile Methodology](#agile-methodology)
+- [3. The Scope](#the-scope)
+- [4. Design](#design)
+- [5. Features](#features)
+- [6. Django Admin](#django-admin)
+- [7. Technologies Used](#technologies-used)
+- [8. Testing](#testing)
+- [9. Deployment](#deployment)
+- [10. Credits](#credits)
+- [11. Acknowledgements](#acknowledgements)
 
 
 ## User Experience (UX)
@@ -35,6 +34,7 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 ### User Stories
 
 * As a website user, I can:
+
 
 1. Navigate around the site and easily view the content.
 
@@ -63,13 +63,16 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 3. Create a new user.
 
 4. Delete user.
+
 5. Approve, reject or delete user's comments.
 
 ### MoSCoW
 
+![MoSCoW screenshot](./README_Images/site_images/MoSCoW.webp)
+
 This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritisation of features. This method makes sure that essential components are tackled in priority order.
 
-![MoSCoW screenshot]()
+
 
 ## Agile Methodology
 
@@ -94,70 +97,89 @@ This blog is for users that are interested in healthy and delicious food for the
 ## Design
 
 ### Wireframes
+Balsamiq was used to design the blogs look.
 
 ### Colour Theme
-![Colour Theme](./README_Images/design_images/theme.jpg)
+![Colour Theme](./README_Images/design_images/theme.webp)
 
 ### Fonts
-![]()
+Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from [Google Fonts](https://fonts.google.com/).
 
 ## Features
 
 ### Navigation Bar
 
 #### Not logged in:
-![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-notlogged.jpg)
+![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-notlogged.webp)
 
 #### Logged in:
-![Navigation Bar - Logged in](./README_Images/site_images/navbar-logged.jpg)
+![Navigation Bar - Logged in](./README_Images/site_images/navbar-logged.webp)
 
 #### Logged in message:
-![Logged in message](./README_Images/site_images/logged-in.jpg)
+![Logged in message](./README_Images/site_images/logged-in.webp)
 
 ### Home Page
-![Home Page](./README_Images/site_images/home-page.jpg)
+![Home Page](./README_Images/site_images/home-page.webp)
 
 #### Home Page - Popular Recipes
-![Popular recipes](./README_Images/site_images/popular-recipes.jpg)
+![Popular recipes](./README_Images/site_images/popular-recipes.webp)
 
 ### Recipe Details
-![Recipe Details](./README_Images/site_images/recipe.jpg)
+![Recipe Details](./README_Images/site_images/recipe.webp)
 
 #### Recipe Details - Comments Logged in:
-![Comments - Logged in](./README_Images/site_images/comment-logged.jpg)
+![Comments - Logged in](./README_Images/site_images/comment-logged.webp)
 
 #### Recipe - Comments logged out:
-![Comments - logged out](./README_Images/site_images/comment-not-logged.jpg)
+![Comments - logged out](./README_Images/site_images/comment-not-logged.webp)
 
 ### About Page
-![About](./README_Images/site_images/about-page.jpg)
+![About](./README_Images/site_images/about-page.webp)
 
 ### Contact Page
-![Contact](./README_Images/site_images/contact.jpg)
+![Contact](./README_Images/site_images/contact.webp)
 
 ### Register Page
-![Register](./README_Images/site_images/signup.jpg)
+![Register](./README_Images/site_images/signup.webp)
 
 ### Sign In Page
-![Sign in](./README_Images/site_images/signin.jpg)
+![Sign in](./README_Images/site_images/signin.webp)
 
 ### Sign Out Page
-![Sign Out]()
+![Sign Out](./README_Images/site_images/signout.webp)
+
+### Sign Out Confirmation
+![Sign out confirmation](./README_Images/site_images/sigout-confirmed.webp)
 
 ### Share Page
 
 #### Share Page - Share Cookbook
-![Share Cookbooks](./README_Images/site_images/share-form.jpg)
+![Share Cookbooks](./README_Images/site_images/share-form.webp)
 
 #### Share Page - View Shared Cookbooks
-![Shared Books](./README_Images/site_images/share-shared.jpg)
+![Shared Books](./README_Images/site_images/share-shared.webp)
 
 ### Footer
-![Footer](./README_Images/site_images/footer.jpg)
+![Footer](./README_Images/site_images/footer.webp)
 
 ### Future Features
 
 ## Django Admin
+
+### Admin Home Page
+![Admin home page](./README_Images/admin_images/admin-page.webp)
+
+### Admin Recipes
+![Admin Recipes](./README_Images/admin_images/admin-recipes.webp)
+
+### Admin Contact
+![Admin Contact](./README_Images/admin_images/admin-contact.webp)
+
+### Admin Comments
+![Admin Comments](./README_Images/admin_images/admin-comments.webp)
+
+### Admin Share
+![Admin Share](./README_Images/admin_images/admin-share.webp)
 
 ## Technologies Used
 
@@ -171,10 +193,28 @@ This blog is for users that are interested in healthy and delicious food for the
 
 ### Frameworks & Libraries Used
 
-*
-*
-*
-*
+* Bootstrap: Was used to style the website, add responsiveness and interactivity.
+
+* Git: Was used for version control to commit to Git and push to GitHub.
+
+* GitHub: Is is used to store the project's code after being pushed from Git
+
+* Heroku: Was used to deploy the live project.
+
+* VSCode: Was used to create and edit the website.
+
+* Fontawesome: To add icons to the website.
+
+* Google Fonts: To add the fonts that could be used for the project.
+
+* Coolors: To build the colour palette of the project.
+
+* Balsamiq: To build the wireframes for the project.
+
+### Databases
+
+* PostgreSQL from Code Institute was used as the PostgreSQL database for this project.
+
 
 ### Django packages Installed
 
@@ -191,6 +231,7 @@ This blog is for users that are interested in healthy and delicious food for the
 * Allauth: For authentication, registration, account management.
 
 * Crispy Forms: To style the forms.
+
 
 ## Testing
 
