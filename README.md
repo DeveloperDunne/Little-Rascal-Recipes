@@ -99,10 +99,6 @@ This blog is for users that are interested in healthy and delicious food for the
 
 ### Fonts
 
-### Images
-
-### Recipes
-
 ## Features
 
 ### Navigation Bar
@@ -223,3 +219,21 @@ All code for this project was written using the IDE visual studio code (VS Code)
 
 - Go to the GitHub repository.
 - Click on the Fork button in the upper right-hand corner.
+
+## Credits
+
+### Code
+The CI walkthrough (Django Blog) was leaned on and relied upon heavily in this project due to time restraints and there are still some remnants of legacy code within. As I was really pushed for time to complete the project I used the CI code and initial styling as a base. 
+
+I did however change the design to make it my own, created and implemented my own app (Share). This app was created so that users once signed up and logged in could share cookbooks that they liked and view other shared cookbooks.  This custom app has full front-end CRUD functionality.
+
+### Recipes
+All recipes were taken from the BBC Goodfood website and can be found here [BBC Good  Food](https://www.bbcgoodfood.com/recipes/collection/toddler-recipes).
+
+### Images
+The recipe images were taken directly from the where the recipes were sourced [BBC Good  Food](https://www.bbcgoodfood.com/recipes/collection/toddler-recipes).
+
+The hero image was taken from [Unsplash](www.unsplash.com).
+
+## Acknowledgements
+Thank you to my mentor,  the Slack community and tutors for all their help throughout this project. Also thank you to my friends and family for help with testing the project.
