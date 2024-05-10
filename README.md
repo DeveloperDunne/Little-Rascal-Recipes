@@ -64,3 +64,23 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 4. Delete user.
 5. Approve, reject or delete user's comments.
+
+## Agile Methodology
+
+* All functionality and development of this project were managed using GitHub Projects. This can be found here [(https://github.com/users/DeveloperDunne/projects/4)]
+
+## The Scope
+
+### Main Site Goals
+
+* To provide users with a good experience when using the website.
+* To provide users with a visually pleasing website that is intuitive to use and easy to navigate.
+* To provide a website with a clear purpose.
+* To provide role-based permissions that allows users to interact with the website.
+* The ability to find relevant information on the business and its services.
+* The ability to update and delete comments if desired.
+* The ability to interact with content by commenting.
+
+### Target audience
+
+This blog is for users that are interested in healthy and delicious food for their children.
