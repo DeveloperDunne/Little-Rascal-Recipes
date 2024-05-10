@@ -18,14 +18,14 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 ## Table of contents
 
-1. User Expeience
-2. User Stories
-3. Agile Methodology
-4. The Scope
-5. Design
-6. Features
-7. Technologies Used
-8. Testing
-9. Deployment
-10. Credits
-11. Acknowledgements
+- [1. User Expeience]()
+- [2. User Stories]()
+- [3. Agile Methodology]()
+- [4. The Scope]()
+- [5. Design]()
+- [6. Features]()
+- [7. Technologies Used]()
+- [8. Testing]()
+- [9. Deployment]()
+- [10. Credits]()
+- [11. Acknowledgements]()
