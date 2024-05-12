@@ -46,9 +46,13 @@
                                 {% endif %}
                             </div>
         
-                            {% if not share.approved and share.name == user.username %}
-                            <p class="approval">This cookbook is awaiting approval</p>
-                            
+                            {% if forloop.counter|divisibleby:3 %}
+                        </div>
+                        <div class="row">
+                            {% endif %}
+                        
+        
+                        </div>
                                
                             </div>
         <!-- Delete confirmation modal -->
@@ -69,7 +73,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {% endif %}
+                            
                         </div>
                     </div>
                     {% endfor %}
