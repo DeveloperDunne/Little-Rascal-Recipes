@@ -14,7 +14,9 @@ def share_a_book(request):
     if request.method == "POST":
         share_a_book_form = ShareABookForm(request.POST, request.FILES)
         if share_a_book_form.is_valid():
-            share_a_book_form.save()
+            shared_book = share_a_book_form.save(commit=False)
+            shared_book.name = request.user.username
+            shared_book.save()
             messages.add_message(request, messages.SUCCESS, "Thanks for sharing!!")
     """
     Renders the Share page

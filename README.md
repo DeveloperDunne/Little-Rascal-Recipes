@@ -140,56 +140,90 @@ When you log in a message will appear at the top of th page to confirm that you 
 ### Home Page
 ![Home Page](./README_Images/site_images/home-page.webp)
 
+Upon arrival to the website you will be directed striaght to the home page. Here you will be shown a welcome message and an enticing 'Explore our recipies' option, drawing you in to what is to come.
+
 #### Home Page - Popular Recipes
 ![Popular recipes](./README_Images/site_images/popular-recipes.webp)
+
+Ig you click on the 'Explore' option you will be directeed down the page to see some of the blogs recipe posts. The user can click on a post to view the ingredients and method on how to make the meal. If there are more than can fit on one page you can click next to view more.
 
 ### Recipe Details
 ![Recipe Details](./README_Images/site_images/recipe.webp)
 
+If the user likes the sound of one of the recipes they can click on teh post title. Once clicked they will be directed to a page displaying the ingredients and the method on how to prepare the meal.
+
 #### Recipe Details - Comments Logged in:
 ![Comments - Logged in](./README_Images/site_images/comment-logged.webp)
 
+If the user has signed up and logged in they will be able interact and to comment on the recipe themselves.
+
 #### Recipe - Comments logged out:
 ![Comments - logged out](./README_Images/site_images/comment-not-logged.webp)
+If the user has not signed up then they will be asked to login if they wish to make a comment. Te user can see the comments and how many of them even if they are not logged in.
 
 ### About Page
 ![About](./README_Images/site_images/about-page.webp)
 
+Here the user can read about the purpose of teh blog and about the creator.
+
 ### Contact Page
 ![Contact](./README_Images/site_images/contact.webp)
+
+The contact page consists of a form that the user can fill out and submit if they have any questions.
 
 ### Register Page
 ![Register](./README_Images/site_images/signup.webp)
 
+This page is a form where they user can sign up to reap the benefits of being a logged in user.
+
 ### Sign In Page
 ![Sign in](./README_Images/site_images/signin.webp)
+
+This page is where the user can sign in so that tehy can make comments and have access to the share page.
 
 ### Sign Out Page
 ![Sign Out](./README_Images/site_images/signout.webp)
 
+This is the sign out page where users can log out. They will be asked to confirm befoer sign out is complete.
+
 ### Sign Out Confirmation
 ![Sign out confirmation](./README_Images/site_images/sigout-confirmed.webp)
+
+Once signed out the user will be redirected to the home page, they will be shown a message which states that they have logged out.
 
 ### Share Page
 
 #### Share Page - Share Cookbook
 ![Share Cookbooks](./README_Images/site_images/share-form.webp)
 
+The share page was designed for logged in users to share their favourite childrens cookbooks. Once the form is filled out it will be sent for appraval to the superuser.
+
 #### Share Page - View Shared Cookbooks
 ![Shared Books](./README_Images/site_images/share-shared.webp)
+
+Below the form the logged in users will be able to view the approved shared books.
 
 ### Footer
 ![Footer](./README_Images/site_images/footer.webp)
 
+The footer provides information on the where to follow the cretaor on social links. Each link will open in a new tab.
+
 ### Future Features
+
+Features I would have like to implement but did not get time would be a favourites function and maybe a like and dislike button on the comments.
 
 ## Django Admin
 
 ### Admin Home Page
 ![Admin home page](./README_Images/admin_images/admin-page.webp)
 
+This is the homepage of teh Django Admin panel. Here the superuser can access posts, create, edit, update and delete for each of the below pages showing full CRUD  functionality.
+
+
 ### Admin Recipes
 ![Admin Recipes](./README_Images/admin_images/admin-recipes.webp)
+
+
 
 ### Admin Contact
 ![Admin Contact](./README_Images/admin_images/admin-contact.webp)
