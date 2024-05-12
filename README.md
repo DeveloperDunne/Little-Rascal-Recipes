@@ -8,11 +8,11 @@ Link to live website: [Little Rascal Recipes](https://little-rascal-recipes-7007
 
 ## Purpose of the project
 
-This is my project 4 for Code Institute as part of their Full stack development diploma. The project is a Full Stack website built using the Django framework.
+This is my project 4 for Code Institute as part of their Full stack development diploma. The project is a full-stack website built using the Django framework.
 
 Little Rascal Recipes is a blog where users can look for a delicious and nutritious meal or snack to prepare for their children aged 12 months and over.
 
-This website initially provides the user with a homepage enticing them to ‘Explore popular Recipes’. Once clicked the page drops down showcasing popular recipes for their child, this is where the user will be prompted to sign up. Once a user signs up and logs in they will have access to a share page where they can view shared and share thier own cookbooks for kids, and have the opportunity to access and partake in the comments section on each recipe. 
+This website initially provides the user with a homepage enticing them to ‘Explore popular Recipes’. Once clicked the page drops down showcasing popular recipes for their child, this is where the user will be prompted to sign up. Once a user signs up and logs in they will have access to a share page where they can view shared and share their own cookbooks for kids, and have the opportunity to access and partake in the comments section on each recipe. 
 
 ## Table of contents
 
@@ -41,15 +41,15 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 2. View a few selected recipes and choose accordingly.
 
-3. Click on post to read the recipe details.
+3. Click on the post to read the recipe details.
 
-4. See the about page which provides information on the bolgs creator.
+4. See the About page which provides information on the blog creator.
 
 5. Register for an account to access the services offered to members.
 
 <br>
 
-* As logged in website user, I can:
+* As a logged in website user, I can:
 
 <br>
 
@@ -57,7 +57,7 @@ This website initially provides the user with a homepage enticing them to ‘Exp
 
 2. Delete any of my previous comments.
 
-3. Logout from the website.
+3. Log out from the website.
 
 <br>
 
@@ -94,24 +94,24 @@ This project used the "MoSCoW" method to classify its features and requirements 
 * To provide users with a good experience when using the website.
 * To provide users with a visually pleasing website that is intuitive to use and easy to navigate.
 * To provide a website with a clear purpose.
-* To provide role-based permissions that allows users to interact with the website.
+* To provide role-based permissions that allow users to interact with the website.
 * The ability to find relevant information on the business and its services.
 * The ability to update and delete comments if desired.
 * The ability to interact with content by commenting.
 
 ### Target audience
 
-This blog is for users that are interested in healthy and delicious food for their children.
+This blog is for users who are interested in healthy and delicious food for their children.
 
 ## Design
 
 ### Wireframes
-Balsamiq was used to design the blogs look.
+Balsamiq was used to design the blog's look.
 
 ### Colour Theme
 ![Colour Theme](./README_Images/design_images/theme.webp)
 
-The color theme above was used throughout the project to ensure consitency and and appeal to the user.
+The colour theme above was used throughout the project to ensure consistency and appeal to the user.
 
 ### Fonts
 Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from [Google Fonts](https://fonts.google.com/).
@@ -120,51 +120,51 @@ Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from [Google Fon
 
 ### Navigation Bar
 
-A responsive navigation bar is situated at the top of the page. When on a mobile the bar condenses into a burger icon which will enable a dropdown menu, however on a desktop all pages are displayed along the bar. What is shown in the navigation bar depends on if teh user is logged in or not.
+A responsive navigation bar is situated at the top of the page. When on a mobile the bar condenses into a burger icon which will enable a dropdown menu, however on a desktop all pages are displayed along the bar. What is shown in the navigation bar depends on whether the user is logged in or not.
 
 #### Not logged in:
-![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-notlogged.webp)
+![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-not logged.webp)
 
 When not logged in you will be able to see the following pages: Home, About, Contact, Register and Sign In.
 
 #### Logged in:
 ![Navigation Bar - Logged in](./README_Images/site_images/navbar-logged.webp)
 
-When logged in the Register and Sign in page disppear and instead you will see a Share page and Logout option.
+When logged in the Register and Sign-in page disappears and instead you will see a Share page and Logout option.
 
 #### Logged in message:
 ![Logged in message](./README_Images/site_images/logged-in.webp)
 
-When you log in a message will appear at the top of th page to confirm that you have logged in successfully.
+When you log in a message will appear at the top of the page to confirm that you have logged in successfully.
 
 ### Home Page
 ![Home Page](./README_Images/site_images/home-page.webp)
 
-Upon arrival to the website you will be directed striaght to the home page. Here you will be shown a welcome message and an enticing 'Explore our recipies' option, drawing you in to what is to come.
+Upon arrival to the website, you will be directed straight to the home page. Here you will be shown a welcome message and an enticing 'Explore our recipes' option, drawing you into what is to come.
 
 #### Home Page - Popular Recipes
 ![Popular recipes](./README_Images/site_images/popular-recipes.webp)
 
-Ig you click on the 'Explore' option you will be directeed down the page to see some of the blogs recipe posts. The user can click on a post to view the ingredients and method on how to make the meal. If there are more than can fit on one page you can click next to view more.
+If you click on the 'Explore' option you will be directed down the page to see some of the blog's recipe posts. The user can click on a post to view the ingredients and methods on how to make the meal. If there are more than can fit on one page you can click next to view more.
 
 ### Recipe Details
 ![Recipe Details](./README_Images/site_images/recipe.webp)
 
-If the user likes the sound of one of the recipes they can click on teh post title. Once clicked they will be directed to a page displaying the ingredients and the method on how to prepare the meal.
+If the user likes the sound of one of the recipes they can click on the post title. Once clicked they will be directed to a page displaying the ingredients and the method on how to prepare the meal.
 
 #### Recipe Details - Comments Logged in:
 ![Comments - Logged in](./README_Images/site_images/comment-logged.webp)
 
-If the user has signed up and logged in they will be able interact and to comment on the recipe themselves.
+If the user has signed up and logged in they will be able to interact and to comment on the recipe themselves.
 
 #### Recipe - Comments logged out:
 ![Comments - logged out](./README_Images/site_images/comment-not-logged.webp)
-If the user has not signed up then they will be asked to login if they wish to make a comment. Te user can see the comments and how many of them even if they are not logged in.
+If the user has not signed up then they will be asked to log in if they wish to comment. The user can see the comments and how many of them even if they are not logged in.
 
 ### About Page
 ![About](./README_Images/site_images/about-page.webp)
 
-Here the user can read about the purpose of teh blog and about the creator.
+Here the user can read about the purpose of the blog and the creator.
 
 ### Contact Page
 ![Contact](./README_Images/site_images/contact.webp)
@@ -174,17 +174,17 @@ The contact page consists of a form that the user can fill out and submit if the
 ### Register Page
 ![Register](./README_Images/site_images/signup.webp)
 
-This page is a form where they user can sign up to reap the benefits of being a logged in user.
+This page is a form where the user can sign up to reap the benefits of being a logged in user.
 
 ### Sign In Page
 ![Sign in](./README_Images/site_images/signin.webp)
 
-This page is where the user can sign in so that tehy can make comments and have access to the share page.
+This page is where the user can sign in so that they can make comments and have access to the share page.
 
 ### Sign Out Page
 ![Sign Out](./README_Images/site_images/signout.webp)
 
-This is the sign out page where users can log out. They will be asked to confirm befoer sign out is complete.
+This is the sign out page where users can log out. They will be asked to confirm before the sign out is complete.
 
 ### Sign Out Confirmation
 ![Sign out confirmation](./README_Images/site_images/sigout-confirmed.webp)
@@ -196,28 +196,28 @@ Once signed out the user will be redirected to the home page, they will be shown
 #### Share Page - Share Cookbook
 ![Share Cookbooks](./README_Images/site_images/share-form.webp)
 
-The share page was designed for logged in users to share their favourite childrens cookbooks. Once the form is filled out it will be sent for appraval to the superuser.
+The share page was designed for logged in users to share their favourite children's cookbooks. Once the form is filled out it will be sent for approval to the superuser.
 
 #### Share Page - View Shared Cookbooks
 ![Shared Books](./README_Images/site_images/share-shared.webp)
 
-Below the form the logged in users will be able to view the approved shared books.
+Below the form, the logged in users will be able to view the approved shared books.
 
 ### Footer
 ![Footer](./README_Images/site_images/footer.webp)
 
-The footer provides information on the where to follow the cretaor on social links. Each link will open in a new tab.
+The footer provides information on where to follow the creator on social links. Each link will open in a new tab.
 
 ### Future Features
 
-Features I would have like to implement but did not get time would be a favourites function and maybe a like and dislike button on the comments.
+Features I would have liked to implement but did not get time to would be a favourites function and maybe a like and dislike button on the comments.
 
 ## Django Admin
 
 ### Admin Home Page
 ![Admin home page](./README_Images/admin_images/admin-page.webp)
 
-This is the homepage of teh Django Admin panel. Here the superuser can access posts, create, edit, update and delete for each of the below pages showing full CRUD  functionality.
+This is the homepage of the Django Admin panel. Here the superuser can access posts, create, edit, update and delete for each of the below pages showing full CRUD  functionality.
 
 
 ### Admin Recipes
@@ -246,7 +246,7 @@ This is the homepage of teh Django Admin panel. Here the superuser can access po
 
 ### Frameworks & Libraries Used
 
-* Bootstrap: Was used to style the website, add responsiveness and interactivity.
+* Bootstrap: This was used to style the website, and add responsiveness and interactivity.
 
 * Git: Was used for version control to commit to Git and push to GitHub.
 
@@ -254,7 +254,7 @@ This is the homepage of teh Django Admin panel. Here the superuser can access po
 
 * Heroku: Was used to deploy the live project.
 
-* VSCode: Was used to create and edit the website.
+* VSCode: This was used to create and edit the website.
 
 * Fontawesome: To add icons to the website.
 
@@ -273,15 +273,15 @@ This is the homepage of teh Django Admin panel. Here the superuser can access po
 
 * Gunicorn: As the server for Heroku.
 
-* Cloudinary: Was used to host the static files and media.
+* Cloudinary: This was used to host the static files and media.
 
 * Dj_database_url: To parse the database URL from the environment variables in Heroku.
 
 * Psycopg2-binary: As an adaptor for Python and PostgreSQL databases.
 
-* Summernote: As a text editor for admin panel.
+* Summernote: As a text editor for the admin panel.
 
-* Allauth: For authentication, registration, account management.
+* Allauth: For authentication, registration, and account management.
 
 * Crispy Forms: To style the forms.
 
@@ -292,7 +292,7 @@ Detailed testing documentation can be found [here.](./TESTING.md)
 
 ## Deployment
 
-All code for this project was written using the IDE visual studio code (VS Code). Github was used for version control and the application was deployed via Heroku.
+All code for this project was written using the IDE Visual Studio code (VS Code). Github was used for version control and the application was deployed via Heroku.
 
  ### Heroku Deployment
 
@@ -353,7 +353,7 @@ I did however change the design to make it my own, created and implemented my ow
 All recipes were taken from the BBC Goodfood website and can be found here [BBC Good  Food](https://www.bbcgoodfood.com/recipes/collection/toddler-recipes).
 
 ### Images
-The recipe images were taken directly from the where the recipes were sourced [BBC Good  Food](https://www.bbcgoodfood.com/recipes/collection/toddler-recipes).
+The recipe images were taken directly from where the recipes were sourced [BBC Good  Food](https://www.bbcgoodfood.com/recipes/collection/toddler-recipes).
 
 The hero image was taken from [Unsplash](www.unsplash.com).
 
