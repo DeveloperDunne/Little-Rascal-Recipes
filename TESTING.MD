@@ -2,11 +2,13 @@
 
 
 ## Contents
-- [1. Automated Tests]()
-- [2. Manual Tests]()
-- [3. Bugs and Fixes]()
+- [1. Automated Tests](#automated-tests)
+- [2. Manual Tests](#manual-testing)
+- [3. Other Bugs and Fixes](#other-bugs-and-fixes)
 
 ## Automated Tests
+
+All code was checked by the following validators. Any issues that still remain are documented below their corresponding page.
 
 ### Validators:
 
@@ -17,7 +19,33 @@
 
 ### Lighthouse Results:
 
-## Manual Testing
+#### Home Page:
+![Home Page](./)
+
+#### Recipe Details:
+![Recipes](./README_Images/testing_images/lighthouse-recipe.webp)
+
+#### About page:
+![About Page]()
+
+#### Contact Page:
+![Contact Page](./README_Images/testing_images/lighthouse-contact.webp)
+
+#### Share Page:
+![Share Page]()
+
+#### Register Page:
+![Register Page]()
+
+#### Log in Page:
+![Login Page](./README_Images/testing_images/lighthouse-login.webp)
+
+#### Logout Page
+![Logout Page](./README_Images/testing_images/lighthouse-logout.webp)
+
+## Manual Testing:
+
+Manual testing was carried out throughout the project.
 
 
 ### Registration Tests:
@@ -84,8 +112,4 @@
 - The site was sent to friends for feedback and testing.
 - All forms have validation and will not be submitted without the proper information and fields required filled in.
 
-
-
-
-
-### Functionality Tests:
+## Other bugs and Fixes
