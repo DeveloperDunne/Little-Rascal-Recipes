@@ -33,7 +33,7 @@ All code was checked by the following validators. Any issues that still remain a
 ![Contact Page](./README_Images/testing_images/lighthouse-contact.webp)
 
 #### Share Page:
-![Share Page]()
+![Share Page](./README_Images/testing_images/lighthouse-share.webp)
 
 #### Register Page:
 ![Register Page](./README_Images/testing_images/lighthouse-register.webp)

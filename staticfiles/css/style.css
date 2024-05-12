@@ -38,7 +38,7 @@ body {
     margin-bottom: 50px;
   }
   
-  .hero-image {
+.hero-image {
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -46,8 +46,8 @@ body {
    
   }
 
-  /* Cover text on hero image */
-  .cover-text {
+/* Cover text on hero image */
+.cover-text {
     background-color: rgba(33, 33, 33, 0);
     font-family: "Lato", sans-serif;
     position: absolute;
@@ -58,14 +58,14 @@ body {
     width: 78%;
   }
   
-  .cover-text > h1 {
+.cover-text > h1 {
     color:white;
     padding-top: 8px;
     font-size: 2.5rem;
     font-weight: 400;
   }
   
-  .cover-text > h2 {
+.cover-text > h2 {
     color: white;
     padding-top: 15px;
     padding-bottom: 20px;
