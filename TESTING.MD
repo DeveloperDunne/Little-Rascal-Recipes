@@ -14,6 +14,7 @@ All code was checked by the following validators. Any issues that still remain a
 
 #### W3C HTML Validator
 #### W3C CSS Validator
+![CSS Validator](./README_Images/testing_images/css-validator.webp)
 #### JShint Validator
 #### PEP8 Validator
 
@@ -26,7 +27,7 @@ All code was checked by the following validators. Any issues that still remain a
 ![Recipes](./README_Images/testing_images/lighthouse-recipe.webp)
 
 #### About page:
-![About Page]()
+![About Page](./README_Images/testing_images/lighthouse-about.webp)
 
 #### Contact Page:
 ![Contact Page](./README_Images/testing_images/lighthouse-contact.webp)
@@ -35,7 +36,7 @@ All code was checked by the following validators. Any issues that still remain a
 ![Share Page]()
 
 #### Register Page:
-![Register Page]()
+![Register Page](./README_Images/testing_images/lighthouse-register.webp)
 
 #### Log in Page:
 ![Login Page](./README_Images/testing_images/lighthouse-login.webp)

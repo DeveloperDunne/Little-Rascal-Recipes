@@ -123,7 +123,7 @@ Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from [Google Fon
 A responsive navigation bar is situated at the top of the page. When on a mobile the bar condenses into a burger icon which will enable a dropdown menu, however on a desktop all pages are displayed along the bar. What is shown in the navigation bar depends on whether the user is logged in or not.
 
 #### Not logged in:
-![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-not logged.webp)
+![Navigation Bar - Not Logged in](./README_Images/site_images/navbar-notlogged.webp)
 
 When not logged in you will be able to see the following pages: Home, About, Contact, Register and Sign In.
 
@@ -288,7 +288,7 @@ This is the homepage of the Django Admin panel. Here the superuser can access po
 
 ## Testing
 
-Detailed testing documentation can be found [here.](./TESTING.md)
+Detailed testing documentation can be found here[ TESTING.MD](./TESTING.md)
 
 ## Deployment
 

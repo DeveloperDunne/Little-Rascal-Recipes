@@ -3,11 +3,11 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-    <!-- Displaying recipes -->
+    <!-- Share a book form -->
     
-        <div class="col-12 col-md-6 my-5">
+        <div class="col-12 mt-3">
                 
-        <div class="">
+        <div class="row">
             <div class="card-body">
                 
                 <h3 class="shared-text">Get involved:</h3>
@@ -24,17 +24,22 @@
                 
             </div>
         </div>
-            <h3 class="shared-text">Shared books:</h3>
-            <br>
-            <div class="container">
-                <div class="row">
-                    {% for share in shared %}
-                    <div class="col-md-4">
-                        <div class="shared-card">
+
+          <!-- Books users have shared -->
+
+        <div id="shared" class="col-12 mt-3 left">
+            <p class="home-text">Shared Books</p>
+            <div class="row">
+                {% for share in shared %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                
+                        <div id="share{{share.id}}" class="share-book shared-details-text text-center">
                             <div>
                                 <img class="share-img " src="{{ share.picture.url }}" alt=" Image">
                             </div>
-                            <div id="share{{share.id}}" class="share-book shared-details-text text-center">
                                 <h4> {{share.title}}</h4>
                                 <br>
                                 <h4>Written by: {{share.author}}</h4>
@@ -45,16 +50,15 @@
                                 <button class="btn btn-edit" data-share_id="{{ share.id }}">Edit</button>
                                 {% endif %}
                             </div>
-        
-                            {% if forloop.counter|divisibleby:3 %}
                         </div>
-                        <div class="row">
-                            {% endif %}
-                        
-        
-                        </div>
-                               
-                            </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+            </div>
+        </div>
         <!-- Delete confirmation modal -->
         <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
             <div class="modal-dialog">
