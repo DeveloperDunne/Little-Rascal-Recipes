@@ -9,7 +9,7 @@
                 
         <div class="">
             <div class="card-body">
-                {% if user.is_authenticated %}
+                
                 <h3 class="shared-text">Get involved:</h3>
                 <br>
                 <p>If you know any cookbooks with amazing recipes for children we would love to hear from you. </p>
@@ -21,9 +21,7 @@
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
-                {% else %}
-                <p>Log in to share a recipe</p>
-                {% endif %}
+                
             </div>
         </div>
             <h3 class="shared-text">Shared books:</h3>
@@ -53,7 +51,7 @@
                             
                                
                             </div>
-                            <!-- Delete confirmation modal -->
+        <!-- Delete confirmation modal -->
         <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
