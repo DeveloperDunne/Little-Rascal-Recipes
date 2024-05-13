@@ -4,13 +4,10 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Share
 from .forms import ShareABookForm
-
 #Views.
-
 def share_a_book(request):
     shared_list = Share.objects.all().filter(
         approved = True)
-
     if request.method == "POST":
         share_a_book_form = ShareABookForm(request.POST, request.FILES)
         if share_a_book_form.is_valid():
@@ -22,16 +19,12 @@ def share_a_book(request):
     Renders the Share page
     """
     share_a_book_form = ShareABookForm
-
     return render(
         request,
         "share/share.html",
-
         {"share_a_book_form": share_a_book_form,
         'shared':shared_list}
  )
-
-
 def share_edit(request, share_id):
  
     if request.method == "POST":
@@ -46,11 +39,7 @@ def share_edit(request, share_id):
             messages.add_message(request, messages.ERROR,
             'Error updating recipe!')
     return redirect('share')
-
-
-
 def share_delete(request, share_id):
-
     """
     Delete a shared post
     """
