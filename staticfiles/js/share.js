@@ -7,6 +7,7 @@ const submitButton = document.getElementById("submitButton");
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
 const deleteButtons = document.getElementsByClassName("btn-delete");
 const deleteConfirm = document.getElementById("deleteConfirm");
+
 function stripAuthor(content) {
   let lines = content.split("\n");
   let writtenByLine = lines.find((line) => line.startsWith("Written by:"));
@@ -23,7 +24,7 @@ for (let button of editButtons) {
     let shareContent = document.getElementById(`share${shareId}`).innerText;
     shareTitle.value = stripTitle(shareContent);
     shareAuthor.value = stripAuthor(shareContent);
-    sharePicture.value = shareContent;
+    //sharePicture.value = shareContent;
     submitButton.innerText = "Update";
     shareForm.setAttribute("action", `edit_share/${shareId}`);
   });
