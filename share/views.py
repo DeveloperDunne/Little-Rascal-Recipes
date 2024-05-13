@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -55,15 +55,12 @@ def share_delete(request, slug, share_id):
     """
     Delete a shared post
     """
-    queryset = Share.objects.filter(status = 1)
-    recipe = get_object_or_404(queryset, slug = slug)
     share = get_object_or_404(Share, pk = share_id)
-
-    if share.name == request.user:
+    if share.name == request.user.username:
         share.delete()
         messages.add_message(request, messages.SUCCESS, 'Cookbook deleted!')
     else:
         messages.add_message(request, messages.ERROR,
             'You can only delete your own shared cookbooks!')
 
-    return HttpResponseRedirect(reverse('share', args = [slug]))
+    return redirect('share')

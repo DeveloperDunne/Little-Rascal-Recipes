@@ -35,8 +35,8 @@ All code was checked by the following validators. Any issues that still remain a
 #### Share Page:
 ![Share Page](./README_Images/testing_images/lighthouse-share.webp)
 
-#### Register Page:
-![Register Page](./README_Images/testing_images/lighthouse-register.webp)
+#### Sign Up Page:
+![Sign Up Page](./README_Images/testing_images/lighthouse-register.webp)
 
 #### Log in Page:
 ![Login Page](./README_Images/testing_images/lighthouse-login.webp)

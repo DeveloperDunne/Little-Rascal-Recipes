@@ -171,8 +171,8 @@ Here the user can read about the purpose of the blog and the creator.
 
 The contact page consists of a form that the user can fill out and submit if they have any questions.
 
-### Register Page
-![Register](./README_Images/site_images/signup.webp)
+### Sign Up Page
+![Sign Up](./README_Images/site_images/signup.webp)
 
 This page is a form where the user can sign up to reap the benefits of being a logged in user.
 
