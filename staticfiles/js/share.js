@@ -20,7 +20,27 @@ for (let button of editButtons) {
     shareForm.setAttribute("action", `edit_share/${shareId}`);
   });
 }
-
+function stripAuthor(content) {
+  let lines = content.split("\n");
+  let writtenByLine = lines.find((line) => line.startsWith("Written by:"));
+  return writtenByLine ? writtenByLine.replace("Written by: ", "") : "";
+}
+function stripTitle(content) {
+  let lines = content.split("\n");
+  let strippedContent = lines[0];
+  return strippedContent;
+}
+for (let button of editButtons) {
+  button.addEventListener("click", (e) => {
+    let shareId = e.target.getAttribute("data-share_id");
+    let shareContent = document.getElementById(`share${shareId}`).innerText;
+    shareTitle.value = stripTitle(shareContent);
+    shareAuthor.value = stripAuthor(shareContent);
+    sharePicture.value = shareContent;
+    submitButton.innerText = "Update";
+    shareForm.setAttribute("action", `edit_share/${shareId}`);
+  });
+}
 
 for (let button of deleteButtons) {
   button.addEventListener("click", (e) => {

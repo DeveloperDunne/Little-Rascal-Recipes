@@ -32,21 +32,20 @@ def share_a_book(request):
  )
 
 
-def share_edit(request, slug, share_id):
+def share_edit(request, share_id):
  
-    shared_list = Share.objects.all().filter(
-        approved = True)
-
     if request.method == "POST":
+        share_to_edit = get_object_or_404(Share, pk=share_id)
         share_a_book_form = ShareABookForm(request.POST, request.FILES)
         if share_a_book_form.is_valid():
-            share_a_book_form.save()
-            messages.add_message(request, messages.SUCCESS, "Thanks for sharing!!")
+            share_to_edit.author = request.POST.get('author')
+            share_to_edit.title = request.POST.get('title')
+            share_to_edit.save()
+            messages.add_message(request, messages.SUCCESS, "Updated !!")
         else:
             messages.add_message(request, messages.ERROR,
             'Error updating recipe!')
-
-    return HttpResponseRedirect(reverse('share', args = [slug]))
+    return redirect('share')
 
 
 
