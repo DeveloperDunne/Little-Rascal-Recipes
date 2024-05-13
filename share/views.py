@@ -50,7 +50,7 @@ def share_edit(request, slug, share_id):
 
 
 
-def share_delete(request, slug, share_id):
+def share_delete(request, share_id):
 
     """
     Delete a shared post
@@ -62,5 +62,4 @@ def share_delete(request, slug, share_id):
     else:
         messages.add_message(request, messages.ERROR,
             'You can only delete your own shared cookbooks!')
-
     return redirect('share')
