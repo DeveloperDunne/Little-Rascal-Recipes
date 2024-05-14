@@ -1,7 +1,6 @@
 const editButtons = document.getElementsByClassName("btn-edit");
 const shareTitle = document.getElementById("id_title");
 const shareAuthor = document.getElementById("id_author");
-const sharePicture = document.getElementById("id_picture");
 const shareForm = document.getElementById("shareForm");
 const submitButton = document.getElementById("submitButton");
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
