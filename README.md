@@ -212,6 +212,8 @@ The footer provides information on where to follow the creator on social links. 
 
 Features I would have liked to implement but did not get time to would be a favourites function and maybe a like and dislike button on the comments.
 
+I would also liked to have styled the pages a bit more, however I just ran out of time.
+
 ## Django Admin
 
 ### Admin Home Page
@@ -347,7 +349,7 @@ All code for this project was written using the IDE Visual Studio code (VS Code)
 ### Code
 The CI walkthrough (Django Blog) was leaned on and relied upon heavily in this project due to time restraints and there are still some remnants of legacy code within. As I was really pushed for time to complete the project I used the CI code and initial styling as a base. 
 
-I did however change the design to make it my own, created and implemented my own app (Share). This app was created so that users once signed up and logged in could share cookbooks that they liked and view other shared cookbooks.  This custom app has full front-end CRUD functionality.
+I did however change the design to make it my own, created and implemented my own app (Share). This app was created so that users once signed up and logged in could share cookbooks that they liked and view other shared cookbooks. This custom app has front-end CRUD functionality.
 
 ### Recipes
 All recipes were taken from the BBC Goodfood website and can be found here [BBC Good  Food](https://www.bbcgoodfood.com/recipes/collection/toddler-recipes).
@@ -358,4 +360,4 @@ The recipe images were taken directly from where the recipes were sourced [BBC G
 The hero image was taken from [Unsplash](www.unsplash.com).
 
 ## Acknowledgements
-Thank you to my mentor,  the Slack community and tutors for all their help throughout this project. Also thank you to my friends and family for help with testing the project.
+Thank you to my mentor, the Slack community and tutors for all their help throughout this project. Also thank you to my friends and family for help with testing the project.
