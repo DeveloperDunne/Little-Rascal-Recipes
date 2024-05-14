@@ -214,13 +214,6 @@ text-align: center;
 }
 
 
-.shared-card {
-    position: relative;
-    margin-bottom: 15px;
-    padding: 20px 0 10px;
-    border-radius: 5px;
-}
-
 .shared-card .content p {
     margin-bottom: 110px !important;
 }
@@ -237,4 +230,11 @@ text-align: center;
 }
 .socials {
  justify-content:space-evenly;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .shared-card{
+        height:200px;
+    }
 }
